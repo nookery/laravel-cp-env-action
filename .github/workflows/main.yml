@@ -1,0 +1,17 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: replace
+    steps:
+      - uses: actions/checkout@v2
+      - uses: nookery/laravel-cp-env-action@main
+      - run: ls -a
+

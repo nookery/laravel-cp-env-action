@@ -1,0 +1,8 @@
+name: 'Laravel-Copy-Env'
+description: '复制.env.example到.env'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  color: "blue"
+  icon: "code"
